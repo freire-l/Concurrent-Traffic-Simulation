@@ -111,7 +111,6 @@ void createTrafficObjects_NYC(std::vector<std::shared_ptr<Street>> &streets, std
 /* Main function */
 int main()
 {
-    /* PART 1 : Set up traffic objects */
 
     // create and connect intersections and streets
     std::vector<std::shared_ptr<Street>> streets;
@@ -133,7 +132,7 @@ int main()
         v->simulate();
     });
 
-    /* PART 3 : Launch visualization */
+
 
     // add all objects into common vector
     std::vector<std::shared_ptr<TrafficObject>> trafficObjects;
